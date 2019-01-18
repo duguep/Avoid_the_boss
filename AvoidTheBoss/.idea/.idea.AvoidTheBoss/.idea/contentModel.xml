@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Roro\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Roro\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_AvoidTheBoss.-2078106712.00" t="ExcludeRecursive" />
-    <e p="D:\Document\PR-Company\Avoid_the_boss\AvoidTheBoss" t="IncludeRecursive">
+    <e p="C:\Users\CR-VR2\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\CR-VR2\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_AvoidTheBoss.491672827.00" t="ExcludeRecursive" />
+    <e p="C:\Users\CR-VR2\Documents\Nootty\Avoid_the_boss\AvoidTheBoss" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Characters" t="Include">
+          <e p="AllStarCharacterLibray" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CamTarget.cs" t="Include" />
+              <e p="CharacterDemoController.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="TurnOffRenderers.cs" t="Include" />
+              </e>
+              <e p="MouseOrbit.cs" t="Include" />
+              <e p="Outfitter.cs" t="Include" />
+              <e p="RootMotionOff.cs" t="Include" />
+              <e p="SkinnedMeshCombiner.cs" t="Include" />
+            </e>
+          </e>
           <e p="WR_wHiteRabbiT-sTudio" t="Include">
             <e p="Scene" t="Include">
               <e p="DancingRabbit" t="Include">
@@ -664,6 +677,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ChangeScene.cs" t="Include" />
+          <e p="PanelsManager.cs" t="Include" />
           <e p="PowerUpSpawner.cs" t="Include" />
           <e p="SetCorrectCameraHeight.cs" t="Include" />
         </e>
@@ -723,6 +738,20 @@
                 <e p="CurvedUITMPSubmesh.cs" t="Include" />
               </e>
             </e>
+          </e>
+          <e p="MultiLanguageTexts" t="Include">
+            <e p="Assets" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="MultiLanguageTextEditor.cs" t="Include" />
+                </e>
+                <e p="MenuManager.cs" t="Include" />
+                <e p="MultiLanguageManager.cs" t="Include" />
+                <e p="MultiLanguageText.cs" t="Include" />
+                <e p="Traduction.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ReadMe.txt" t="Include" />
           </e>
           <e p="ProceduralUIImage" t="Include">
             <e p="Editor" t="Include">
