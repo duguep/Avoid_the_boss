@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114360806378882282}
   - component: {fileID: 114226333201963186}
   - component: {fileID: 114269060611378028}
+  - component: {fileID: 114894024531338994}
   m_Layer: 0
   m_Name: Stapler_red
   m_TagString: Untagged
@@ -149,9 +150,10 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   ObservedComponents:
   - {fileID: 114269060611378028}
+  - {fileID: 114894024531338994}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -180,3 +182,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3464e04ca927e7241abe482b10530a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  view: {fileID: 0}
+--- !u!114 &114894024531338994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002712970532216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3

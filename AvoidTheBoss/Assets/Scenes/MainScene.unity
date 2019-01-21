@@ -192,6 +192,11 @@ Prefab:
       propertyPath: m_Name
       value: Desk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114875669917922382, guid: 4e53f967d76d5794c843a37a01fea98b,
+        type: 2}
+      propertyPath: PlayerPlace
+      value: 
+      objectReference: {fileID: 1558740168}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e53f967d76d5794c843a37a01fea98b, type: 2}
   m_IsPrefabAsset: 0
@@ -230,6 +235,32 @@ Material:
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
     m_Colors: []
+--- !u!1 &163957970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1349954032245968, guid: 4e53f967d76d5794c843a37a01fea98b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1555280538}
+--- !u!114 &163957973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163957970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 6
+  InstantiationId: 6
+  isRuntimeInstantiated: 0
 --- !u!1001 &446565814
 Prefab:
   m_ObjectHideFlags: 0
@@ -1664,9 +1695,40 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 114875669917922382, guid: 4e53f967d76d5794c843a37a01fea98b,
+        type: 2}
+      propertyPath: PlayerPlace
+      value: 
+      objectReference: {fileID: 1097230692}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e53f967d76d5794c843a37a01fea98b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &541557623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1349954032245968, guid: 4e53f967d76d5794c843a37a01fea98b,
+    type: 2}
+  m_PrefabInternal: {fileID: 446565814}
+--- !u!114 &541557626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541557623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 3
+  InstantiationId: 3
+  isRuntimeInstantiated: 0
 --- !u!1001 &632066328
 Prefab:
   m_ObjectHideFlags: 0
@@ -1709,6 +1771,32 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d131dc4f84850547aedff4153de8e02, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &634223590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1349954032245968, guid: 4e53f967d76d5794c843a37a01fea98b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1788520668}
+--- !u!114 &634223593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634223590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 4
+  InstantiationId: 4
+  isRuntimeInstantiated: 0
 --- !u!4 &724367656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4137907324090918, guid: 4e53f967d76d5794c843a37a01fea98b,
@@ -1773,6 +1861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 922238786}
+  - component: {fileID: 922238787}
   m_Layer: 0
   m_Name: Player 4 spawner
   m_TagString: Untagged
@@ -1793,6 +1882,18 @@ Transform:
   m_Father: {fileID: 1011363467}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 40, z: 0}
+--- !u!114 &922238787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 922238785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad277bed287c8684cbc5f1235204af0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &960193212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1009198011}
+  - component: {fileID: 1009198012}
   m_Layer: 0
   m_Name: Player 1 spawner
   m_TagString: Untagged
@@ -1853,6 +1955,18 @@ Transform:
   m_Father: {fileID: 1011363467}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 130, z: 0}
+--- !u!114 &1009198012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009198010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad277bed287c8684cbc5f1235204af0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &1011363466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +2007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1097230691}
+  - component: {fileID: 1097230692}
   m_Layer: 0
   m_Name: Player 2 spawner
   m_TagString: Untagged
@@ -1913,6 +2028,44 @@ Transform:
   m_Father: {fileID: 1011363467}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
+--- !u!114 &1097230692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1097230690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad277bed287c8684cbc5f1235204af0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!1 &1224789232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1349954032245968, guid: 4e53f967d76d5794c843a37a01fea98b,
+    type: 2}
+  m_PrefabInternal: {fileID: 107067026}
+--- !u!114 &1224789235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1224789232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 5
+  InstantiationId: 5
+  isRuntimeInstantiated: 0
 --- !u!1 &1272058184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +2111,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1276786224
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: UI/Procedural UI Image
+  m_Shader: {fileID: 4800000, guid: 27d83044d20c5de4e9d57d35e4fda368, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
 --- !u!21 &1380113870
 Material:
   serializedVersion: 6
@@ -3431,6 +3614,11 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 114875669917922382, guid: 4e53f967d76d5794c843a37a01fea98b,
+        type: 2}
+      propertyPath: PlayerPlace
+      value: 
+      objectReference: {fileID: 922238787}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e53f967d76d5794c843a37a01fea98b, type: 2}
   m_IsPrefabAsset: 0
@@ -3447,6 +3635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558740167}
+  - component: {fileID: 1558740168}
   m_Layer: 0
   m_Name: Player 3 spawner
   m_TagString: Untagged
@@ -3467,6 +3656,18 @@ Transform:
   m_Father: {fileID: 1011363467}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -140, z: 0}
+--- !u!114 &1558740168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558740166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad277bed287c8684cbc5f1235204af0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1001 &1578872024
 Prefab:
   m_ObjectHideFlags: 0
@@ -3518,36 +3719,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cde9e87d3083144b85dc90402dc0bf0, type: 2}
   m_IsPrefabAsset: 0
---- !u!21 &1621533641
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: UI/Procedural UI Image
-  m_Shader: {fileID: 4800000, guid: 27d83044d20c5de4e9d57d35e4fda368, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
 --- !u!1001 &1676228039
 Prefab:
   m_ObjectHideFlags: 0
@@ -3664,6 +3835,11 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 140920989}
+    - target: {fileID: 114875669917922382, guid: 4e53f967d76d5794c843a37a01fea98b,
+        type: 2}
+      propertyPath: PlayerPlace
+      value: 
+      objectReference: {fileID: 1009198012}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e53f967d76d5794c843a37a01fea98b, type: 2}
   m_IsPrefabAsset: 0

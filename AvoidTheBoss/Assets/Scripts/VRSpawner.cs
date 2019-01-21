@@ -11,23 +11,25 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
 
 {
 
-   // public GameObject LocalPlayer;    
+    // public GameObject LocalPlayer;    
     string _gameVersion = "1";
     private int indexPos;
     [FormerlySerializedAs("pos")] public Transform[] Pos;
-    
-    
+
+
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         indexPos = 0;
         Connect();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
     public override void OnConnectedToMaster()
     {
         Debug.Log("DemoAnimator/Launcher: OnConnectedToMaster() was called by PUN");
@@ -38,18 +40,6 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
     public override void OnDisconnected(DisconnectCause cause)
     {
         Debug.LogWarning("DemoAnimator/Launcher: OnDisconnectedFromPhoton() was called by PUN");
-    }
-    
-    public void OnOwnershipRequest(object[] viewAndPlayer)
-    {
-        PhotonView view = viewAndPlayer[0] as PhotonView;
-        PhotonPlayer requestingPlayer = viewAndPlayer[1] as PhotonPlayer;
-
-        Debug.Log("OnOwnershipRequest(): Player " + requestingPlayer + " requests ownership of: " + view + ".");
-        if (this.TransferOwnershipOnRequest)
-        {
-            view.TransferOwnership(requestingPlayer.ID);
-        }
     }
 
     public void Connect()
@@ -71,11 +61,13 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
             PhotonNetwork.ConnectUsingSettings();
         }
     }
-    public override void  OnJoinRandomFailed(short returnCode, string message)
+
+    public override void OnJoinRandomFailed(short returnCode, string message)
     {
-        Debug.Log("DemoAnimator/Launcher:OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);");
+        Debug.Log(
+            "DemoAnimator/Launcher:OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);");
         // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-        PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = 4 }, null);
+        PhotonNetwork.CreateRoom(null, new RoomOptions() {MaxPlayers = 4}, null);
     }
 
     public void OnEnable()
@@ -101,6 +93,7 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
         // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
         PhotonNetwork.AutomaticallySyncScene = true;
     }
+
     public readonly byte InstantiateVrAvatarEventCode = 123;
 
     public override void OnJoinedRoom()
@@ -108,6 +101,7 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
         indexPos = PhotonNetwork.CountOfPlayersInRooms;
         print("nbr od player" + indexPos);
         GameObject localAvatar = Instantiate(Resources.Load("LocalAvatar"), Pos[indexPos]) as GameObject;
+        Pos[indexPos].gameObject.GetComponent<PlayerPlace>().player = localAvatar;
         PhotonView photonView = localAvatar.GetComponent<PhotonView>();
 
         if (PhotonNetwork.AllocateViewID(photonView))
@@ -141,6 +135,4 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
             photonView.ViewID = (int) photonEvent.CustomData;
         }
     }
-
-
-*}
+}

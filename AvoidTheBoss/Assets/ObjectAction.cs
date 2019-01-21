@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class ObjectAction : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class ObjectAction : MonoBehaviour
 
     private bool action = false;
 
-    private PhotonView view;
+    public PhotonView view;
     
     private void Start()
     {
@@ -28,14 +30,6 @@ public class ObjectAction : MonoBehaviour
             action = true;
         else
         {
-            if (view.Owner.UserId == PhotonNetwork.LocalPlayer.UserId)
-                print("mine");
-            else
-            {
-                print("request");
-                view.RequestOwnership();
-                print(view.Owner.UserId + " = " + PhotonNetwork.LocalPlayer.UserId);
-            }
             grabbed = bla.isGrabbed;
         }
     }
@@ -46,7 +40,7 @@ public class ObjectAction : MonoBehaviour
         {
             
             print("boom" + other.gameObject.name);
-            Destroy(this.gameObject);            
+            PhotonNetwork.Destroy(this.gameObject);            
         }
         
 
