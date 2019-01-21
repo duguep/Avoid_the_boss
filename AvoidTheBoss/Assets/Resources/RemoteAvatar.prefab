@@ -68,6 +68,8 @@ GameObject:
   - component: {fileID: 114955762091616446}
   - component: {fileID: 114555733165146678}
   - component: {fileID: 114573981437199398}
+  - component: {fileID: 114130275455556010}
+  - component: {fileID: 114415816219954002}
   m_Layer: 0
   m_Name: RemoteAvatar
   m_TagString: Untagged
@@ -1512,6 +1514,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53b07ad62d980a4da9fffff0b05fd2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114130275455556010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104509419451286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0a5bd189e9f1348925b4fef780ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114321532411599608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1768,6 +1781,17 @@ MonoBehaviour:
     UpdateRate: 0.033333335
   VoiceAmplitude: 0
   EnableMouthVertexAnimation: 1
+--- !u!114 &114415816219954002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104509419451286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad1f1cd0592b124caf831c38c6dbcb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114433782180159260
 MonoBehaviour:
   m_ObjectHideFlags: 1

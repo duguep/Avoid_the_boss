@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114521187440110806}
   - component: {fileID: 114865427771703922}
   - component: {fileID: 114854065306572562}
+  - component: {fileID: 114376120600735582}
   m_Layer: 0
   m_Name: LocalAvatar
   m_TagString: Untagged
@@ -1244,6 +1245,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e19ec58d4a9e844970103e5bd8946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114376120600735582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1024175967583792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad1f1cd0592b124caf831c38c6dbcb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114477252760865400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1333,9 +1345,9 @@ MonoBehaviour:
   ControllerRight: {fileID: 114498655244179600}
   HandLeft: {fileID: 114477252760865400}
   HandRight: {fileID: 114729075422810868}
-  RecordPackets: 0
+  RecordPackets: 1
   UseSDKPackets: 1
-  StartWithControllers: 1
+  StartWithControllers: 0
   FirstPersonLayer:
     layerIndex: 0
   ThirdPersonLayer:
@@ -1361,7 +1373,7 @@ MonoBehaviour:
   PacketSettings:
     UpdateRate: 0.033333335
   VoiceAmplitude: 0
-  EnableMouthVertexAnimation: 0
+  EnableMouthVertexAnimation: 1
 --- !u!114 &114607314214353814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1459,7 +1471,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 114854065306572562}
-  viewIdField: 0
+  viewIdField: 1
   InstantiationId: 1
   isRuntimeInstantiated: 0
 --- !u!114 &114928062844118090
