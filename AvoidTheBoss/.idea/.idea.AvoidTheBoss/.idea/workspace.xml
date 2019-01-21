@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22f17a5-d6d5-401e-9272-734f8e456b6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VRSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VRSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalAvatar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LocalAvatar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RemoteAvatar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RemoteAvatar.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
+            <state relative-caret-position="483">
               <caret line="97" column="88" selection-start-line="97" selection-start-column="88" selection-end-line="97" selection-end-column="88" />
               <folding>
                 <marker date="1548065905567" expanded="true" signature="6:215" ph="..." />
@@ -137,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonAvatarView.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+            <state relative-caret-position="560">
+              <caret line="42" column="73" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="73" />
               <folding>
                 <marker date="1548065515459" expanded="false" signature="6:113" ph="..." />
                 <marker date="1548065515459" expanded="true" signature="161:3095" ph="{...}" />
@@ -218,8 +219,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1968" />
-    <option name="y" value="-22" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -285,12 +286,12 @@
       <workItem from="1547803988784" duration="111000" />
       <workItem from="1547806918761" duration="38000" />
       <workItem from="1547807187773" duration="3240000" />
-      <workItem from="1548057763060" duration="4275000" />
+      <workItem from="1548057763060" duration="5567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10306000" />
+    <option name="totallyTimeSpent" value="11598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,7 +303,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
@@ -395,36 +396,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonAvatarView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-          <folding>
-            <marker date="1548065515459" expanded="false" signature="6:113" ph="..." />
-            <marker date="1548065515459" expanded="true" signature="161:3095" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="371:793" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="458:688" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="701:787" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="822:999" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="859:993" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="1091:1768" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="1177:1217" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="1281:1762" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="1829:2360" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="1901:2354" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="2444:3091" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="2480:2782" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="2529:2581" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="2675:2739" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="2813:3085" ph="{...}" />
-            <marker date="1548065515459" expanded="true" signature="2933:3075" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
+        <state relative-caret-position="483">
           <caret line="97" column="88" selection-start-line="97" selection-start-column="88" selection-end-line="97" selection-end-column="88" />
           <folding>
             <marker date="1548065905567" expanded="true" signature="6:215" ph="..." />
@@ -449,6 +423,33 @@
             <marker date="1548065905567" expanded="true" signature="3670:3784" ph="{...}" />
             <marker date="1548065905567" expanded="true" signature="3839:4169" ph="{...}" />
             <marker date="1548065905567" expanded="true" signature="3907:4163" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonAvatarView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="42" column="73" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="73" />
+          <folding>
+            <marker date="1548065515459" expanded="false" signature="6:113" ph="..." />
+            <marker date="1548065515459" expanded="true" signature="161:3095" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="371:793" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="458:688" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="701:787" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="822:999" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="859:993" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="1091:1768" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="1177:1217" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="1281:1762" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="1829:2360" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="1901:2354" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="2444:3091" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="2480:2782" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="2529:2581" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="2675:2739" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="2813:3085" ph="{...}" />
+            <marker date="1548065515459" expanded="true" signature="2933:3075" ph="{...}" />
           </folding>
         </state>
       </provider>
