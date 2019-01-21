@@ -4,7 +4,7 @@ using System.IO;
 using Photon.Pun;
 using UnityEngine;
 
-public class PhotonAvatarView : MonoBehaviour {
+public class PhotonAvatarView : MonoBehaviour, IPunObservable {
     private PhotonView photonView;
     private OvrAvatar ovrAvatar;
     private OvrAvatarRemoteDriver remoteDriver;

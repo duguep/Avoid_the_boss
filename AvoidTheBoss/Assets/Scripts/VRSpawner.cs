@@ -39,6 +39,18 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         Debug.LogWarning("DemoAnimator/Launcher: OnDisconnectedFromPhoton() was called by PUN");
     }
+    
+    public void OnOwnershipRequest(object[] viewAndPlayer)
+    {
+        PhotonView view = viewAndPlayer[0] as PhotonView;
+        PhotonPlayer requestingPlayer = viewAndPlayer[1] as PhotonPlayer;
+
+        Debug.Log("OnOwnershipRequest(): Player " + requestingPlayer + " requests ownership of: " + view + ".");
+        if (this.TransferOwnershipOnRequest)
+        {
+            view.TransferOwnership(requestingPlayer.ID);
+        }
+    }
 
     public void Connect()
     {
@@ -131,4 +143,4 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
     }
 
 
-}
+*}
