@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114521187440110806}
   - component: {fileID: 114865427771703922}
   - component: {fileID: 114854065306572562}
-  - component: {fileID: 114376120600735582}
+  - component: {fileID: 114450294959391350}
   m_Layer: 0
   m_Name: LocalAvatar
   m_TagString: Untagged
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e19ec58d4a9e844970103e5bd8946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114376120600735582
+--- !u!114 &114450294959391350
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

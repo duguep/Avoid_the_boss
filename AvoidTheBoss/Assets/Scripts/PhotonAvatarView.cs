@@ -40,7 +40,7 @@ public class PhotonAvatarView : MonoBehaviour {
 
     public void OnLocalAvatarPacketRecorded(object sender, OvrAvatar.PacketEventArgs args)
     {
-        if (!PhotonNetwork.InRoom || (PhotonNetwork.CountOfPlayersInRooms < 2))
+        if (!PhotonNetwork.InRoom || (PhotonNetwork.CurrentRoom.PlayerCount < 2))
         {
             return;
         }
