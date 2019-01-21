@@ -1009,8 +1009,10 @@
         <e p="Scripts" t="Include">
           <e p="ChangeScene.cs" t="Include" />
           <e p="PanelsManager.cs" t="Include" />
+          <e p="PhotonAvatarView.cs" t="Include" />
           <e p="PowerUpSpawner.cs" t="Include" />
           <e p="SetCorrectCameraHeight.cs" t="Include" />
+          <e p="SyncServer.cs" t="Include" />
           <e p="VRSpawner.cs" t="Include" />
         </e>
         <e p="UI" t="Include">
