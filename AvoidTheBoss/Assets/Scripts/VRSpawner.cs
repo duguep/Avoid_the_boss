@@ -95,7 +95,7 @@ public class VRSpawner : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         indexPos = PhotonNetwork.CountOfPlayersInRooms;
         print("nbr od player" + indexPos);
-        GameObject localAvatar = Instantiate(Resources.Load("LocalAvatar"), Pos[indexPos - 1]) as GameObject;
+        GameObject localAvatar = Instantiate(Resources.Load("LocalAvatar"), Pos[indexPos]) as GameObject;
         PhotonView photonView = localAvatar.GetComponent<PhotonView>();
 
         if (PhotonNetwork.AllocateViewID(photonView))
