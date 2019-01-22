@@ -1006,6 +1006,7 @@
             </e>
           </e>
         </e>
+        <e p="PlayerPlace.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ChangeScene.cs" t="Include" />
           <e p="PanelsManager.cs" t="Include" />
