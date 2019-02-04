@@ -308,7 +308,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 0}
       propertyPath: m_Material
       value: 
@@ -325,7 +325,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 0}
       propertyPath: m_Material
       value: 
@@ -334,7 +334,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 0}
       propertyPath: m_Material
       value: 
@@ -343,7 +343,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 0}
       propertyPath: m_Material
       value: 
@@ -360,17 +360,17 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 114878387609578654, guid: 4e53f967d76d5794c843a37a01fea98b,
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 114937853817478908, guid: 4e53f967d76d5794c843a37a01fea98b,
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 140920989}
+      objectReference: {fileID: 1971706197}
     - target: {fileID: 1834584223804676, guid: 4e53f967d76d5794c843a37a01fea98b, type: 2}
       propertyPath: m_Name
       value: Desk (2)
@@ -1997,7 +1997,7 @@ Transform:
   - {fileID: 1558740167}
   - {fileID: 922238786}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1097230690
 GameObject:
@@ -2111,36 +2111,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1276786224
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: UI/Procedural UI Image
-  m_Shader: {fileID: 4800000, guid: 27d83044d20c5de4e9d57d35e4fda368, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
 --- !u!21 &1380113870
 Material:
   serializedVersion: 6
@@ -3705,7 +3675,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4761080027705318, guid: 5cde9e87d3083144b85dc90402dc0bf0, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114555733165146678, guid: 5cde9e87d3083144b85dc90402dc0bf0,
         type: 2}
@@ -3843,7 +3813,7 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e53f967d76d5794c843a37a01fea98b, type: 2}
   m_IsPrefabAsset: 0
---- !u!21 &2144523499
+--- !u!21 &1971706197
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
