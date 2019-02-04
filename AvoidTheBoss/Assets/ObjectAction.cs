@@ -5,6 +5,7 @@ using Photon.Pun;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEditor;
 
 public class ObjectAction : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class ObjectAction : MonoBehaviour
     private bool action = false;
 
     public PhotonView view;
+
+    public Component powerup;
+
+    public GameObject parent;
     
     private void Start()
     {
@@ -38,12 +43,19 @@ public class ObjectAction : MonoBehaviour
     {
         if (action)
         {
-            
+            IAction power = powerup as IAction;
+            if (power != null) 
+                power.Action();
             print("boom" + other.gameObject.name);
-            PhotonNetwork.Destroy(this.gameObject);            
+            PhotonNetwork.Destroy(parent ? parent : this.gameObject);
         }
         
 
+    }
+    
+    public interface IAction
+    {
+        void Action();
     }
 }
 

@@ -1011,10 +1011,18 @@
           <e p="ChangeScene.cs" t="Include" />
           <e p="PanelsManager.cs" t="Include" />
           <e p="PhotonAvatarView.cs" t="Include" />
+          <e p="PowerUp" t="Include">
+            <e p="Grenade.cs" t="Include" />
+            <e p="ink.cs" t="Include" />
+            <e p="Rabbit.cs" t="Include" />
+          </e>
           <e p="PowerUpSpawner.cs" t="Include" />
           <e p="SetCorrectCameraHeight.cs" t="Include" />
           <e p="SyncServer.cs" t="Include" />
           <e p="VRSpawner.cs" t="Include" />
+          <e p="Xore" t="Include">
+            <e p="PlayerScore.cs" t="Include" />
+          </e>
         </e>
         <e p="UI" t="Include">
           <e p="CurvedUI" t="Include">
