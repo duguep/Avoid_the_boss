@@ -1246,6 +1246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522d90886dbc40b4896501d792cbb3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScore: []
+  playerName: []
 --- !u!114 &114320222039998078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1484,7 +1486,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114854065306572562}
   - {fileID: 114450294959391350}
-  viewIdField: 1
+  viewIdField: 0
   InstantiationId: 1
   isRuntimeInstantiated: 0
 --- !u!114 &114928062844118090

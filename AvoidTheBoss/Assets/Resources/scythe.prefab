@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   view: {fileID: 0}
   powerup: {fileID: 0}
+  parent: {fileID: 0}
 --- !u!114 &114897485695446656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,7 +247,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114113827246642284}
   - {fileID: 114652099192896506}
-  viewIdField: 18
+  viewIdField: 0
   InstantiationId: 18
   isRuntimeInstantiated: 0
 --- !u!198 &198491676410382674
