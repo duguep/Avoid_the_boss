@@ -18,7 +18,11 @@ public class PowerUpSpawner : MonoBehaviour
 		{
 			instance = PhotonNetwork.Instantiate(powerUpPrefabs.name, transform.position, Quaternion.identity);
 			if (instance)
-				instance.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.LocalPlayer);
+			{
+				instance.transform.parent = this.gameObject.transform;
+				//instance.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.LocalPlayer);
+			}
+			
 		}
 	}
 }

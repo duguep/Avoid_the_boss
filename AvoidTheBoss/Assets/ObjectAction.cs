@@ -25,14 +25,24 @@ public class ObjectAction : MonoBehaviour
         if (view == null)
             view = GetComponent<PhotonView>();
         bla = GetComponent<OVRGrabbable>();
+        grabbed = false;
+        action = false;
     }
 
     
     private void Update()
     {
-        
-        if (!bla.isGrabbed && grabbed == true)
-            action = true;
+        if (!bla.isGrabbed)
+        {
+            if (grabbed)
+            {
+                action = true;
+            }
+            else
+            {
+                action = false;
+            }
+        }
         else
         {
             grabbed = bla.isGrabbed;
@@ -45,8 +55,7 @@ public class ObjectAction : MonoBehaviour
         {
             IAction power = powerup as IAction;
             if (power != null) 
-                power.Action();
-            print("boom" + other.gameObject.name);
+                power.Action(other);
             PhotonNetwork.Destroy(parent ? parent : this.gameObject);
         }
         
@@ -55,7 +64,10 @@ public class ObjectAction : MonoBehaviour
     
     public interface IAction
     {
-        void Action();
+        int cost { get; set; }
+        int pts { get; set; }
+        int ptsToOther { get; set; }
+        void Action(Collision other);
     }
 }
 

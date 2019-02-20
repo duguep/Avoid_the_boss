@@ -10,7 +10,10 @@ public class PlayerScore : MonoBehaviour
 	public List<Text> playerScore;
 
 	public List<Text> playerName;
-		
+
+
+	public PlayerPlace place;
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -30,5 +33,10 @@ public class PlayerScore : MonoBehaviour
 			playerScore[i].text = PhotonNetwork.PlayerList[i].GetScore().ToString();
 		}
 		
+	}
+	
+	public void avertBoss(bool state)
+	{
+		place.setActivePanel(state);
 	}
 }

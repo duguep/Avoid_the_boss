@@ -2245,7 +2245,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1028017392916586}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.89, y: 7.73, z: 1.9}
@@ -2284,7 +2284,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114471047617285370}
   - {fileID: 114626196244919986}
-  viewIdField: 13
+  viewIdField: 0
   InstantiationId: 13
   isRuntimeInstantiated: 0
 --- !u!114 &114105073632177718
@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
+  m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
 --- !u!137 &137126974677260748
