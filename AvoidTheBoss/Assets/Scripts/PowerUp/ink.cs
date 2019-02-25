@@ -12,6 +12,8 @@ public class ink : MonoBehaviour, ObjectAction.IAction {
     public int pts { get; set; }
     public int ptsToOther { get; set; }
 
+    public GameObject explodedInk;
+    
     private void Start()
     {
         _photonView = GetComponent<PhotonView>();
@@ -23,13 +25,17 @@ public class ink : MonoBehaviour, ObjectAction.IAction {
     
     public void Action(Collision other)
     {
-        print("ink");			
-        int player;
-        if (int.TryParse(other.gameObject.tag, out player))
-        {
-            _photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
-            if (player <= PhotonNetwork.CountOfPlayersInRooms)
-                PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
-        }
+        print("ink");
+
+        GameObject explo = PhotonNetwork.Instantiate(explodedInk.name, transform.position, transform.rotation);
+        explo.GetComponent<AudioSource>().Play();
+        
+//        int player;
+//        if (int.TryParse(other.gameObject.tag, out player))
+//        {
+//            _photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
+//            if (player <= PhotonNetwork.CountOfPlayersInRooms)
+//                PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
+//        }
     }
 }
