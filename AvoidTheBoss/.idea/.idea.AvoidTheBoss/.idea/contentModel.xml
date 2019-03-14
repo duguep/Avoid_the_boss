@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Roro\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Roro\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_AvoidTheBoss.-2078106712.00" t="ExcludeRecursive" />
-    <e p="D:\Document\PR-Company\Avoid_the_boss\AvoidTheBoss" t="IncludeRecursive">
+    <e p="C:\Users\CR-VR2\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\CR-VR2\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_AvoidTheBoss.491672827.00" t="ExcludeRecursive" />
+    <e p="C:\Users\CR-VR2\Documents\Nootty\Avoid_the_boss\AvoidTheBoss" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -1029,6 +1029,8 @@
           <e p="PanelsManager.cs" t="Include" />
           <e p="PhotonAvatarView.cs" t="Include" />
           <e p="PowerUp" t="Include">
+            <e p="DestroyEx.cs" t="Include" />
+            <e p="grenada.cs" t="Include" />
             <e p="Grenade.cs" t="Include" />
             <e p="ink.cs" t="Include" />
             <e p="Rabbit.cs" t="Include" />

@@ -13,6 +13,8 @@ public class ObjectAction : MonoBehaviour
     private bool grabbed = false;
 
     private bool action = false;
+    private bool hasbeengrab = false;
+    [SerializeField] private bool explosiv = false;
 
     public PhotonView view;
 
@@ -45,6 +47,13 @@ public class ObjectAction : MonoBehaviour
         }
         else
         {
+            if (explosiv)
+                hasbeengrab = true;
+            if (grabbed && !hasbeengrab)
+            {
+                GetComponent<AudioSource>().Play();
+                hasbeengrab = true;
+            }
             grabbed = bla.isGrabbed;
         }
     }
