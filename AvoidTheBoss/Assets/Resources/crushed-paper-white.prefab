@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 64687926863383582}
   - component: {fileID: 114032795442362462}
   - component: {fileID: 82655610582787988}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4446511675893368}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: crushed-paper-white
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,10 +313,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3464e04ca927e7241abe482b10530a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  action: 0
   explosiv: 0
   view: {fileID: 0}
   powerup: {fileID: 114032795442362462}
   parent: {fileID: 1197158031889742}
+  cost: 10
 --- !u!114 &114979951599857018
 MonoBehaviour:
   m_ObjectHideFlags: 1

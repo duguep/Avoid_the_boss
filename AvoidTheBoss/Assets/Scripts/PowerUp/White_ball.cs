@@ -6,6 +6,13 @@ using UnityEngine;
 
 public class White_ball : MonoBehaviour, ObjectAction.IAction
 {
+	/// <summary>
+	/// white ball boule de papier simple.
+	/// cost = 0pts
+	/// le joueur qui envoie gagne 100 pts
+	/// le joueur toucher perd 50 pts
+	/// </summary>
+	
 	private ObjectAction _objectAction;
 	private PhotonView _photonView;
 	public int cost { get; set; }

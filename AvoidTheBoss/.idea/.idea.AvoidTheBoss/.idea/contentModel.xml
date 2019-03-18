@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\CR-VR2\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\CR-VR2\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_AvoidTheBoss.491672827.00" t="ExcludeRecursive" />
-    <e p="C:\Users\CR-VR2\Documents\Nootty\Avoid_the_boss\AvoidTheBoss" t="IncludeRecursive">
+    <e p="C:\Users\Roro\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Roro\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_AvoidTheBoss.-2078106712.00" t="ExcludeRecursive" />
+    <e p="D:\Document\PR-Company\Avoid_the_boss\AvoidTheBoss" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -50,6 +50,35 @@
           </e>
         </e>
         <e p="DoorController.cs" t="Include" />
+        <e p="EffectExamples" t="Include">
+          <e p="Editor" t="Include">
+            <e p="PackageManagerAssembly" t="Include">
+              <e p="PackageImportList.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Shared" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DecalDestroyer.cs" t="Include" />
+              <e p="ExtinguishableFire.cs" t="Include" />
+              <e p="GunAim.cs" t="Include" />
+              <e p="GunShoot.cs" t="Include" />
+              <e p="ParticleCollision.cs" t="Include" />
+              <e p="ParticleExamples.cs" t="Include" />
+              <e p="ParticleMenu.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="SurfaceShader_VC.shader" t="Include" />
+            </e>
+          </e>
+          <e p="TutorialInfo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ReadmeEditor.cs" t="Include" />
+              </e>
+              <e p="Readme.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Env" t="Include">
           <e p="SimpleBoxInterior" t="Include">
             <e p="SimpleBoxInteriors.txt" t="Include" />
@@ -1029,17 +1058,22 @@
           <e p="PanelsManager.cs" t="Include" />
           <e p="PhotonAvatarView.cs" t="Include" />
           <e p="PowerUp" t="Include">
+            <e p="alarm.cs" t="Include" />
+            <e p="Coffee.cs" t="Include" />
             <e p="DestroyEx.cs" t="Include" />
             <e p="grenada.cs" t="Include" />
             <e p="Grenade.cs" t="Include" />
             <e p="ink.cs" t="Include" />
             <e p="Rabbit.cs" t="Include" />
+            <e p="red_ball.cs" t="Include" />
+            <e p="Repair.cs" t="Include" />
             <e p="White_ball.cs" t="Include" />
           </e>
           <e p="PowerUpSpawner.cs" t="Include" />
           <e p="SetCorrectCameraHeight.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="SyncServer.cs" t="Include" />
+          <e p="ViewPaper.cs" t="Include" />
           <e p="VRSpawner.cs" t="Include" />
           <e p="Xore" t="Include">
             <e p="PlayerScore.cs" t="Include" />

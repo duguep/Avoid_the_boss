@@ -293,10 +293,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3464e04ca927e7241abe482b10530a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  action: 0
   explosiv: 1
   view: {fileID: 0}
   powerup: {fileID: 114356135641997220}
   parent: {fileID: 0}
+  cost: 0
 --- !u!114 &114894024531338994
 MonoBehaviour:
   m_ObjectHideFlags: 1

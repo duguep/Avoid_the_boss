@@ -4,30 +4,33 @@ using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using UnityEngine;
 
-public class grenada : MonoBehaviour, ObjectAction.IAction {
+public class alarm : MonoBehaviour, ObjectAction.IAction
+{
+
+	/// <summary>
+	/// L'alarme enleve un indicateur pour le joueur
+	/// cost = 300pts
+	/// le joueur qui envoie gagne 0 pts
+	/// le joueur toucher perd 50pts
+	/// </summary>
 	
-	[SerializeField] private GameObject explodedInk;
+	
+	// Use this for initialization
+	void Start ()
+	{
+		_photonView = GetComponent<PhotonView>();
+		cost = 300;
+		pts = 0;
+		ptsToOther = -50;
+	}
+	
 	public int cost { get; set; }
 	public int pts { get; set; }
 	public int ptsToOther { get; set; }
 	private PhotonView _photonView;
 	
-	private void Start()
-	{
-		//_objectAction = GetComponent<ObjectAction>();
-		_photonView = GetComponent<PhotonView>();
-		cost = 100;
-		pts = 0;
-		ptsToOther = -50;
-	}
-
 	public void Action(Collision other)
 	{
-		// Explode
-		print("Grenada !");
-		GameObject explo = PhotonNetwork.Instantiate(explodedInk.name, transform.position, transform.rotation);
-		explo.GetComponent<AudioSource>().Play();
-		
 		// point
 		int player;
 		if (int.TryParse(other.gameObject.tag, out player))
@@ -39,6 +42,5 @@ public class grenada : MonoBehaviour, ObjectAction.IAction {
 				PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
 			}			
 		}
-		
 	}
 }

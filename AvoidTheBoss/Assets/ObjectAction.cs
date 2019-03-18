@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Pun.UtilityScripts;
 using Photon.Realtime;
 using UnityEditor;
 
@@ -12,7 +13,7 @@ public class ObjectAction : MonoBehaviour
     private OVRGrabbable bla;
     private bool grabbed = false;
 
-    private bool action = false;
+    public bool action = false;
     private bool hasbeengrab = false;
     [SerializeField] private bool explosiv = false;
 
@@ -21,7 +22,7 @@ public class ObjectAction : MonoBehaviour
     public Component powerup;
 
     public GameObject parent;
-    
+    public int cost;
     private void Start()
     {
         if (view == null)
@@ -29,6 +30,7 @@ public class ObjectAction : MonoBehaviour
         bla = GetComponent<OVRGrabbable>();
         grabbed = false;
         action = false;
+        
     }
 
     
@@ -39,6 +41,7 @@ public class ObjectAction : MonoBehaviour
             if (grabbed)
             {
                 action = true;
+
             }
             else
             {
@@ -47,10 +50,10 @@ public class ObjectAction : MonoBehaviour
         }
         else
         {
-            if (explosiv)
-                hasbeengrab = true;
             if (grabbed && !hasbeengrab)
             {
+                PhotonView photonView = GetComponent<PhotonView>();
+                photonView.Owner.SetScore(photonView.Owner.GetScore() - cost);
                 GetComponent<AudioSource>().Play();
                 hasbeengrab = true;
             }
