@@ -1056,6 +1056,7 @@
         <e p="RpcManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ChangeScene.cs" t="Include" />
+          <e p="DispPrice.cs" t="Include" />
           <e p="PanelsManager.cs" t="Include" />
           <e p="PhotonAvatarView.cs" t="Include" />
           <e p="PowerUp" t="Include">
