@@ -36,24 +36,21 @@ public class ink : MonoBehaviour, ObjectAction.IAction
 
         GameObject explo = PhotonNetwork.Instantiate(explodedInk.name, transform.position, transform.rotation);
         explo.GetComponent<AudioSource>().Play();
+
         
+        //set points
         int player;
         if (int.TryParse(other.gameObject.tag, out player))
         {
 
             if (player < PhotonNetwork.PlayerList.Length && !PhotonNetwork.PlayerList[player].IsLocal)
             {
+                // set view
+                _photonView.RPC("Ink", other.collider.GetComponent<PhotonView>().Owner);
+                
                 _photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
                 PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
             }			
         }
-        
-//        int player;
-//        if (int.TryParse(other.gameObject.tag, out player))
-//        {
-//            _photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
-//            if (player <= PhotonNetwork.CountOfPlayersInRooms)
-//                PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
-//        }
     }
 }

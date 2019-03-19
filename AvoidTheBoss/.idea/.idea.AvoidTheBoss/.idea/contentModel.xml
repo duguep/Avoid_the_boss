@@ -1053,6 +1053,7 @@
           </e>
         </e>
         <e p="PlayerPlace.cs" t="Include" />
+        <e p="RpcManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ChangeScene.cs" t="Include" />
           <e p="PanelsManager.cs" t="Include" />
@@ -1067,6 +1068,7 @@
             <e p="Rabbit.cs" t="Include" />
             <e p="red_ball.cs" t="Include" />
             <e p="Repair.cs" t="Include" />
+            <e p="Scinthe.cs" t="Include" />
             <e p="White_ball.cs" t="Include" />
           </e>
           <e p="PowerUpSpawner.cs" t="Include" />
