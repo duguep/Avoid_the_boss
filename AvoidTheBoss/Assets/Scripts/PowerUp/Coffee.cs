@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using UnityEngine;
-
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 public class Coffee : MonoBehaviour, ObjectAction.IAction
 {
 	/// <summary>
@@ -30,19 +30,20 @@ public class Coffee : MonoBehaviour, ObjectAction.IAction
 	public int pts { get; set; }
 	public int ptsToOther { get; set; }
 	private PhotonView _photonView;
-	
+	[SerializeField] private float timeinvincble;
+
 	public void Action(Collision other)
 	{
-		// point
-		int player;
-		if (int.TryParse(other.gameObject.tag, out player))
-		{
+		StartCoroutine(coffeeactivator());
+	}
 
-			if (player < PhotonNetwork.PlayerList.Length && !PhotonNetwork.PlayerList[player].IsLocal)
-			{
-				_photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
-				PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
-			}			
-		}
+	IEnumerator coffeeactivator()
+	{
+		Hashtable hash  = new Hashtable();
+		hash.Add("invincible", true);		
+		_photonView.Owner.SetCustomProperties(hash);
+		yield return new WaitForSeconds(timeinvincble);
+		hash.Add("invincible", false);		
+		_photonView.Owner.SetCustomProperties(hash);
 	}
 }

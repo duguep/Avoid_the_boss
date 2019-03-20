@@ -29,11 +29,13 @@ public class ViewPaper : MonoBehaviour
         {
             if (m_Hit.collider.gameObject.GetComponent<ObjectAction>().action)
             {
-                print("Hit : " + m_Hit.collider.name);
                 //Output the name of the Collider your Box hit
-                Debug.Log("Hit : " + m_Hit.collider.name);
                 PhotonView bla = m_Hit.collider.gameObject.GetComponent<PhotonView>();
-                bla.Owner.SetScore(0);
+                object com;
+                bla.Owner.CustomProperties.TryGetValue("canSeeByBoss", out com);
+                bool b = (com as bool?) ?? false;
+                if (b)
+                    bla.Owner.SetScore(0);
                 PhotonNetwork.Destroy(m_Hit.collider.transform.parent.gameObject
                     ? m_Hit.collider.transform.parent.gameObject
                     : m_Hit.collider.gameObject);

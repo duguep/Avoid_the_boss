@@ -32,4 +32,7 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
+  - alarm
+  - ink
+  - red
   DisableAutoOpenWizard: 1

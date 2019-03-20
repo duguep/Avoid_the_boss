@@ -11,8 +11,9 @@ public class PlayerScore : MonoBehaviour
 
 	public List<Text> playerName;
 
-
 	public PlayerPlace place;
+
+	public bool toactive;
 	
 	// Use this for initialization
 	void Start ()
@@ -37,6 +38,7 @@ public class PlayerScore : MonoBehaviour
 	
 	public void avertBoss(bool state)
 	{
-		place.setActivePanel(state);
+		if (toactive)
+			place.setActivePanel(state);
 	}
 }

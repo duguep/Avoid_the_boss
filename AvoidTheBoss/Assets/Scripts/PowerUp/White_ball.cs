@@ -39,8 +39,14 @@ public class White_ball : MonoBehaviour, ObjectAction.IAction
 			print("is local = " + PhotonNetwork.PlayerList[player].IsLocal);
 			if (player < PhotonNetwork.PlayerList.Length && !PhotonNetwork.PlayerList[player].IsLocal)
 			{
-				_photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
-				PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
+				object com;
+				PhotonNetwork.PlayerList[player].CustomProperties.TryGetValue("invincible", out com);
+				bool b = (com as bool?) ?? false;
+				if (!b)
+				{
+					_photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
+					PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
+				}
 			}			
 		}
 	}
