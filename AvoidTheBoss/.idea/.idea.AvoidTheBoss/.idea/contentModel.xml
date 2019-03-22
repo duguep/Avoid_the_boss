@@ -1067,7 +1067,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ChangeScene.cs" t="Include" />
+          <e p="DispoOrNot.cs" t="Include" />
           <e p="DispPrice.cs" t="Include" />
+          <e p="MasterLevel.cs" t="Include" />
           <e p="PanelsManager.cs" t="Include" />
           <e p="PhotonAvatarView.cs" t="Include" />
           <e p="PowerUp" t="Include">
@@ -1079,7 +1081,9 @@
             <e p="White_ball.cs" t="Include" />
           </e>
           <e p="PowerUpSpawner.cs" t="Include" />
+          <e p="QuitTheApp.cs" t="Include" />
           <e p="SetCorrectCameraHeight.cs" t="Include" />
+          <e p="setOVRight.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="SyncServer.cs" t="Include" />
           <e p="VRSpawner.cs" t="Include" />
@@ -1196,6 +1200,9 @@
               <e p="IconPreview.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Workplace Tools" t="Include">
+          <e p="ReadMe.txt" t="Include" />
         </e>
       </e>
       <e p="AvoidTheBoss.sln" t="IncludeFlat" />
