@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using UnityEngine;
+
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class Repair : MonoBehaviour, ObjectAction.IAction
 {
@@ -27,18 +30,19 @@ public class Repair : MonoBehaviour, ObjectAction.IAction
 	
 	public void Action(Collision other)
 	{
-		print("Reapir !!! ");
+		print("Repair !!! ");
 
-        
-		int player;
-		if (int.TryParse(other.gameObject.tag, out player))
+		Hashtable hashtable = _photonView.Owner.CustomProperties;
+
+		ICollection keys = hashtable.Keys;
+
+		foreach (String key in keys)
 		{
-
-			if (player < PhotonNetwork.PlayerList.Length && !PhotonNetwork.PlayerList[player].IsLocal)
+			if (key != "invincible" && key != "canSeeByBoss")
 			{
-				_photonView.Owner.SetScore(_photonView.Owner.GetScore() + pts);
-				PhotonNetwork.PlayerList[player].SetScore(PhotonNetwork.PlayerList[player].GetScore() + ptsToOther);
-			}			
+				hashtable[key] = -1;
+			}
 		}
+
 	}
 }

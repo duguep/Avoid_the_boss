@@ -39,11 +39,17 @@ public class Coffee : MonoBehaviour, ObjectAction.IAction
 
 	IEnumerator coffeeactivator()
 	{
-		Hashtable hash  = new Hashtable();
-		hash.Add("invincible", true);		
-		_photonView.Owner.SetCustomProperties(hash);
+		Hashtable hashtable = _photonView.Owner.CustomProperties;
+		//set view at the boss
+		if(hashtable.ContainsKey("invincible"))
+		{
+			hashtable["invincible"] = true;
+		}
+		else
+		{
+			hashtable.Add("invincible", true);
+		}
 		yield return new WaitForSeconds(timeinvincble);
-		hash.Add("invincible", false);		
-		_photonView.Owner.SetCustomProperties(hash);
+		_photonView.Owner.CustomProperties["invincible"] = false;
 	}
 }

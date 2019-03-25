@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using UnityEngine;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class White_ball : MonoBehaviour, ObjectAction.IAction
 {
@@ -49,5 +50,24 @@ public class White_ball : MonoBehaviour, ObjectAction.IAction
 				}
 			}			
 		}
+		else if (other.gameObject.tag.Equals("object"))
+		{
+			checkObject(other);	
+		}
+	}
+
+	void checkObject(Collision other)
+	{
+		PhotonView goPhotonView = other.gameObject.GetComponent<PhotonView>();
+		Hashtable hashtable = goPhotonView.Owner.CustomProperties;
+		object point;
+		if (hashtable.TryGetValue(other.gameObject.name, out point))
+		{
+			int points = (int) point;
+			points--;
+			if (points == 0)
+				PhotonNetwork.Destroy(other.gameObject);
+			hashtable[other.gameObject.name] = points;
+		}		
 	}
 }

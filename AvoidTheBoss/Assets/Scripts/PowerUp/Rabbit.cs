@@ -39,20 +39,25 @@ public class Rabbit : MonoBehaviour, ObjectAction.IAction
 	
 	IEnumerator DontSee()
 	{
-		Hashtable hash = new Hashtable();
 		//instantiate Rabbit
 		GameObject go = PhotonNetwork.Instantiate(RabbitToSpawn.name, Vector3.zero, Quaternion.identity);
 
+		Hashtable hashtable = _photonView.Owner.CustomProperties;
 		//set view at the boss
-		hash.Add("canSeeByBoss", false);		
-		_photonView.Owner.SetCustomProperties(hash);
+		if(hashtable.ContainsKey("canSeeByBoss"))
+		{
+			hashtable["canSeeByBoss"] = false;
+		}
+		else
+		{
+			hashtable.Add("canSeeByBoss", false);
+		}
 		
 		yield return new WaitForSeconds(timeToInvisible);
 
 		//set view at the boss
-		hash.Add("canSeeByBoss", true);		
-		_photonView.Owner.SetCustomProperties(hash);
-
+		_photonView.Owner.CustomProperties["canSeeByBoss"] = true;
+	
 		PhotonNetwork.Destroy(go);
 	}
 }
